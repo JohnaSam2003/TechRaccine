@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Sorting</title>
+</head>
+<body>
+    <h1>Enter Student Names</h1>
+    <label for="student1">Enter Student 1:</label>
+    <input type="text" id="stu1"><br><br>
+    <label for="student2">Enter Student 2:</label>
+    <input type="text" id="stu2"><br><br>
+    <label for="student3">Enter Student 3:</label>
+    <input type="text" id="stu3"><br><br>
+    <label for="student4">Enter Student 4:</label>
+    <input type="text" id="stu4"><br><br>
+    <label for="student5">Enter Student 5:</label>
+    <input type="text" id="stu5"><br><br>
+    <button onclick="sort()">Sort</button>
+
+    <h3 id="sorted-names"></h3>
+
+    <script>
+        function sort(){
+            var student1 = document.getElementById("stu1").value
+            var student2 = document.getElementById("stu2").value
+            var student3 = document.getElementById("stu3").value
+            var student4 = document.getElementById("stu4").value
+            var student5 = document.getElementById("stu5").value
+
+            let names = [student1,student2,student3,student4,student5]
+            names.sort()
+            
+            document.getElementById("sorted-names").textContent = "Sorted names: " + names.join(", ")
+        }
+    </script>
+</body>
+</html>

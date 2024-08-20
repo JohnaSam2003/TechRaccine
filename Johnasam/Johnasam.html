@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johna Sam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Johna Sam Felix Portfolio</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="about-me.html">About Me</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="Futuregoals.html">Future Goals</a>
+    </nav>
+
+    <div class="content" id="home">
+        <img src="johnasamfelix.jpg" alt="">
+        <h2>Home</h2>
+        <p>Hello and welcome to my personal website! I’m Johna Sam, a passionate and dedicated professional with a diverse set of skills and a commitment to continuous learning and growth. 
+        <p>Here, you’ll find information about my background, achievements, and the goals that drive me forward.
+        
+    </div>
+    <script>
+
+        function showContactNumber() {
+            const phoneNumber = "16380060552";
+            alert("Your contact number is: " + phoneNumber);
+        }
+
+        const contactButton = document.createElement('button');
+        contactButton.innerText = 'Contact';
+        contactButton.style.padding = '10px 20px';
+        contactButton.style.fontSize = '16px';
+        contactButton.style.cursor = 'pointer';
+
+        contactButton.addEventListener('click', showContactNumber);
+
+        document.body.appendChild(contactButton);
+
+    </script>
+</body>
+</html>
